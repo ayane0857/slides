@@ -21,7 +21,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-[#F9F6F7]">
       {/* メインコンテンツ */}
       <main className="flex-1 px-4 py-12">
         <section className="max-w-6xl mx-auto">
