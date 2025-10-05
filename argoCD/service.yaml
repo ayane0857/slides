@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ayane-slides-site
+spec:
+  selector:
+    app: ayane-slides-site
+  ports:
+    - port: 80
+      targetPort: 3000
+  type: ClusterIP
