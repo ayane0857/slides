@@ -17,7 +17,6 @@ export default function Home() {
       image: "/1759661892013-043e3006-43a6-41ce-b19a-f4a5c49d7f78_1.png", // サムネイル画像のパス
       date: "2025.10.05",
     },
-    // 他のスライドを追加する場合はここに
   ];
 
   return (
@@ -47,6 +46,8 @@ export default function Home() {
                         src={slide.image}
                         alt={slide.title}
                         fill
+                        quality={75}
+                        fetchpriority="high"
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
