@@ -47,7 +47,6 @@ export default function Home() {
                         alt={slide.title}
                         fill
                         quality={75}
-                        fetchpriority="high"
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
