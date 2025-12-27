@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/ui/footer";
 import {
@@ -12,19 +11,24 @@ export default function Home() {
   const slides = [
     {
       title: "支払い履歴を閲覧できるAPIを作ってみた",
-      description: "UniProject 夏のLT大会 2025",
+      description: "UniProject 2025 LT大会 夏の陣",
       href: "/create-open-balance.pdf",
-      image: "/1759661892013-043e3006-43a6-41ce-b19a-f4a5c49d7f78_1.png", // サムネイル画像のパス
+      image: "/71cc71b3-e8fb-e618-b36f-567f22087430.png",
       date: "2025.10.05",
+    },
+    {
+      title: "新しい技術をいっぱい触っておもったこと",
+      description: "UniProject 2025 LT大会 冬の陣",
+      href: "/many-new-technology.pdf",
+      image: "/4d6fda81-b932-4e5b-f10a-74f927d36120.png",
+      date: "2025.12.27",
     },
   ];
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F9F6F7]">
-      {/* メインコンテンツ */}
       <main className="flex-1 px-4 py-12">
         <section className="max-w-6xl mx-auto">
-          {/* ヘッダー */}
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
               スライド一覧
@@ -34,13 +38,15 @@ export default function Home() {
             </p>
           </div>
 
-          {/* スライドグリッド */}
           {slides.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {slides.map((slide, index) => (
-                <Link key={index} href={slide.href} className="group">
+                <a
+                  key={index}
+                  href={`https://ayane0857.m1.xrea.com/lt/${slide.href}`}
+                  className="group"
+                >
                   <Card className="overflow-hidden border-2 hover:border-blue-400 hover:shadow-xl transition-all duration-300 h-full">
-                    {/* サムネイル画像 */}
                     <div className="relative w-full aspect-video">
                       <Image
                         src={slide.image}
@@ -51,7 +57,6 @@ export default function Home() {
                       />
                     </div>
 
-                    {/* カード内容 */}
                     <CardHeader>
                       <CardTitle className="text-lg group-hover:text-blue-600 transition-colors line-clamp-2">
                         {slide.title}
@@ -62,7 +67,7 @@ export default function Home() {
                       </CardDescription>
                     </CardHeader>
                   </Card>
-                </Link>
+                </a>
               ))}
             </div>
           ) : (
