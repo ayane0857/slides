@@ -10,18 +10,18 @@ import {
 export default function Home() {
   const slides = [
     {
-      title: "支払い履歴を閲覧できるAPIを作ってみた",
-      description: "UniProject 2025 LT大会 夏の陣",
-      href: "/create-open-balance.pdf",
-      image: "/71cc71b3-e8fb-e618-b36f-567f22087430.png",
-      date: "2025.10.05",
-    },
-    {
       title: "新しい技術をいっぱい触っておもったこと",
       description: "UniProject 2025 LT大会 冬の陣",
       href: "/many-new-technology.pdf",
       image: "/4d6fda81-b932-4e5b-f10a-74f927d36120.png",
       date: "2025.12.27",
+    },
+    {
+      title: "支払い履歴を閲覧できるAPIを作ってみた",
+      description: "UniProject 2025 LT大会 夏の陣",
+      href: "/create-open-balance.pdf",
+      image: "/71cc71b3-e8fb-e618-b36f-567f22087430.png",
+      date: "2025.10.05",
     },
   ];
 
