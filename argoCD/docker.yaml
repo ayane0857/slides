@@ -6,7 +6,6 @@ kind: Secret
 metadata:
   creationTimestamp: "2026-01-12T15:25:48Z"
   name: regcred
-  namespace: default
   resourceVersion: "1056271"
   uid: 38f22ab7-6820-4def-bea3-8720d452c98c
 type: kubernetes.io/dockerconfigjson
