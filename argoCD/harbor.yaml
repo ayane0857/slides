@@ -8,5 +8,8 @@ spec:
     .dockerconfigjson: AgBakxACHwp383B2wEywdvoRt0sZt5WbHq7NUU68Smit8HEfCg0A5LysTkJC/6gN27hTIY11ZOPQPYI27VH9Fd1EwDeg7unEPu4WPHcjZWdU1qTviA9drSJQNvaj5wTK3Xih16kIHe57lcxRVIUuteiUkMfnXs8GlUaT3a77l82Q4wvVMRdtcDKcqNN++z/rgZcDT2dp6Z6+N7Jx+9h81NjjfyngFO1HiTC5o3uRJyOeoeXn1U3kGtEwo4ParfSoLHKuyLNGRkwAB47xANS7Jk+L8jd9g8PFcIKQTnsByKCaUzC05QwG7hZppencPq/20rXjVbXBjUHaMokR332eN+BewikjKM2+zvNjiXINLrT95abfeGTMme8IfWbOYluvSFukVNdc6W+m2gHqLdbjICWdpUPY4kTAZyYhTSRrcTYnpHFhisO0kO2EM0fwS274xNw7MokGQKpEECdLCvoqh29KEfP6GsmZkELdt0ujAGHIcugx+hL7574R3vGFNrkfxKa4QOJ0YRl0U5gQxt27oKLvGv9C3YJGHlQ/Rjo+c8vltS1uBLOi94lz95Wna4w+zrmlHP/d1Cqc8CLb1Aeo9+UBdEV+mVBNs5G+zebZgaQbXPLagVrY76LXwvlfA1eUhjpNIpcsQO4rIFnDcnRlYlaEACWtA/yWbdPoZ8WINZX6TYJpo6mJsCL66/akPAnu4tsULl9PeplhKzZ+eYBHpZQ0JjuR3ukfUqF5mUxehwaDAqf5+Nkj3FO/ogPMLNyJRMLjQES/5TC/kJ2vIEsHzWtL0Y96o3JaxulAWpGvEVGW36TVzS4rWNgeakJeFgx46Jh4sC7jm+nA/d5jYefVcc8Rq2eci/cpl4PysV5EVXYFpCNVBi50/5A9H5U5Vuy8QqX3LSth1j7E
   template:
     metadata:
+      annotations:
+        sealedsecrets.bitnami.com/cluster-wide: "true"
+      creationTimestamp: null
       name: regcred
     type: kubernetes.io/dockerconfigjson
