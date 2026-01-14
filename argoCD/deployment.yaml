@@ -15,7 +15,7 @@ spec:
         app: ayane-slides-site
     spec:
       imagePullSecrets:
-        - name: internal-harbor
+        - name: regcred
       containers:
         - name: app
           image: registry.uniproject.jp/ayane/ayane-slides-site:0.1.7
