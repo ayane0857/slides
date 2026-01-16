@@ -6,20 +6,21 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { AlertTriangle } from "lucide-react";
 
 export default function Home() {
   const slides = [
     {
       title: "新しい技術をいっぱい触っておもったこと",
       description: "UniProject 2025 LT大会 冬の陣",
-      href: "/many-new-technology.pdf",
+      href: "many-new-technology.pdf",
       image: "/4d6fda81-b932-4e5b-f10a-74f927d36120.png",
       date: "2025.12.27",
     },
     {
       title: "支払い履歴を閲覧できるAPIを作ってみた",
       description: "UniProject 2025 LT大会 夏の陣",
-      href: "/create-open-balance.pdf",
+      href: "create-open-balance.pdf",
       image: "/71cc71b3-e8fb-e618-b36f-567f22087430.png",
       date: "2025.10.05",
     },
@@ -28,7 +29,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-[#F9F6F7]">
       <main className="flex-1 px-4 py-12">
-        <section className="max-w-6xl mx-auto">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
               スライド一覧
@@ -43,7 +44,7 @@ export default function Home() {
               {slides.map((slide, index) => (
                 <a
                   key={index}
-                  href={`https://ayane0857.m1.xrea.com/lt/${slide.href}`}
+                  href={`http://ayane0857.m1.xrea.com/lt/${slide.href}`}
                   className="group"
                 >
                   <Card className="overflow-hidden border-2 hover:border-blue-400 hover:shadow-xl transition-all duration-300 h-full">
@@ -76,6 +77,17 @@ export default function Home() {
             </div>
           )}
         </section>
+        <div className="max-w-6xl mx-auto mb-8 mt-12 px-4 sm:px-6 lg:px-8">
+          <div className="bg-amber-50/80 border border-amber-200 text-amber-900 px-4 py-3 rounded-lg flex items-start gap-3 shadow-sm backdrop-blur-sm">
+            <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+            <div className="text-sm">
+              <h3 className="font-semibold text-amber-800">リンク先に関するご注意</h3>
+              <p className="text-amber-700/80 mt-1">
+                スライドデータは外部サーバー（Xrea）を利用しているため、リンク先は暗号化されていないHTTP接続となります。
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
 
       <Footer />
