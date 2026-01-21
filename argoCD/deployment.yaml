@@ -25,8 +25,8 @@ spec:
               name: default-port
           resources:
             limits:
-              memory: "3Gi"
+              memory: "1Gi"
               cpu: "3000m"
             requests:
-              memory: "1Gi"
+              memory: "512Mi"
               cpu: "1000m"
