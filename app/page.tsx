@@ -43,7 +43,7 @@ export default function Home() {
               {slides.map((slide, index) => (
                 <a
                   key={index}
-                  href={`http://ayane0857.m1.xrea.com/lt/${slide.href}`}
+                  href={`https://ftp-to-web.ayane.workers.dev/view-pdf?file=${slide.href}`}
                   className="group"
                 >
                   <Card className="overflow-hidden border-2 hover:border-blue-400 hover:shadow-xl transition-all duration-300 h-full">
