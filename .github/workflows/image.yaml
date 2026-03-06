@@ -22,7 +22,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: registry.uniproject.jp
-          username: ayane
+          username: robot$github-publisher
           password: ${{ secrets.HARBOR_TOKEN }}
 
       - name: Build and Push Docker image
